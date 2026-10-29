@@ -15,13 +15,13 @@ export default function Header() {
 
         <nav aria-label="Main navigation" className="hidden items-center gap-8 text-sm font-bold text-blue-100 md:flex">
           {links.map((link) => (
-            <a key={link} href="#" className="relative transition-colors hover:text-white after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:rounded-full after:bg-white after:transition-transform hover:after:scale-x-100">{link}</a>
+            <a key={link} href="#" className="relative transition-colors hover:text-white after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:rounded-full after:bg-white after:transition-transform motion-reduce:after:transition-none hover:after:scale-x-100">{link}</a>
           ))}
         </nav>
 
         <div className="flex items-center gap-2">
           <div className="mr-4 hidden items-center gap-2 rounded-full border border-blue-400/20 bg-blue-500/30 px-3 py-1 lg:flex">
-            <span className="relative flex h-2 w-2"><span className="absolute h-full w-full animate-ping rounded-full bg-blue-200 opacity-75" /><span className="relative h-2 w-2 rounded-full bg-blue-100" /></span>
+            <span className="relative flex h-2 w-2"><span className="absolute h-full w-full rounded-full bg-blue-200 opacity-75 motion-safe:animate-ping" /><span className="relative h-2 w-2 rounded-full bg-blue-100" /></span>
             <span className="text-[10px] font-black uppercase tracking-widest text-blue-50">Live</span>
           </div>
           <div className="relative hidden sm:block">

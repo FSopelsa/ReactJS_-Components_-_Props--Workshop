@@ -15,7 +15,7 @@ export default function FilterSidebar() {
             {categories.map((category, index) => (
               <label key={category.name} className="flex cursor-pointer items-center gap-3 text-sm text-slate-700">
                 <input type="checkbox" defaultChecked={index === 0} className="h-[1.125rem] w-[1.125rem] accent-blue-600" />
-                <span>{category.name} <span className="text-slate-400">({category.count})</span></span>
+                <span>{category.name} <span className="text-slate-600">({category.count})</span></span>
               </label>
             ))}
           </div>
@@ -25,7 +25,7 @@ export default function FilterSidebar() {
 
         <section aria-labelledby="filters-price" className="space-y-3">
           <h2 id="filters-price" className="text-sm font-bold text-slate-900">Price Range</h2>
-          <div className="flex justify-between text-xs text-slate-500"><span>0 kr</span><span>1800 kr</span></div>
+          <div className="flex justify-between text-xs text-slate-600"><span>0 kr</span><span>1800 kr</span></div>
           <input type="range" min="0" max="1800" defaultValue="900" aria-label="Price range" className="w-full accent-blue-500" />
         </section>
 

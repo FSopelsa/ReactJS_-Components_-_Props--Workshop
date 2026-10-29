@@ -48,10 +48,10 @@ export default function Footer() {
           ))}
         </div>
         <div className="mt-20 flex flex-col gap-4 border-t border-slate-100 pt-8 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400">&copy; 2026 LITE.SHOP. All rights reserved.</p>
+          <p className="text-[11px] font-bold uppercase tracking-widest text-slate-600">&copy; 2026 LITE.SHOP. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <a href="#" className="text-[10px] font-black uppercase tracking-widest text-slate-400 transition-colors hover:text-slate-900">Privacy Policy</a>
-            <a href="#" className="text-[10px] font-black uppercase tracking-widest text-slate-400 transition-colors hover:text-slate-900">Terms of Service</a>
+            <a href="#" className="text-[10px] font-black uppercase tracking-widest text-slate-600 transition-colors hover:text-slate-900">Privacy Policy</a>
+            <a href="#" className="text-[10px] font-black uppercase tracking-widest text-slate-600 transition-colors hover:text-slate-900">Terms of Service</a>
           </div>
         </div>
       </div>
