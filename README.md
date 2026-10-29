@@ -22,12 +22,13 @@ Open the local address printed by Vite. The reference design is the `index.html`
 - `ProductCard` receives a typed `product` prop from `App` and displays its image, category, name, rating, prices, badge and availability. The `soldOut` value controls the card's appearance and disables its action.
 - `Pagination` displays the reference page navigation.
 - `Newsletter` displays the newsletter section and its unavailable sign-up form.
+- `Footer` displays the brand, social icons and grouped links.
 
 Passing product data as props lets the same card display different products without repeating its layout. `App` creates a card for each item in the product array.
 
 ## Current scope
 
-The header, filter panel, six reference products, pagination and newsletter section are in place. The footer is still to be added. The controls are visual placeholders: searching, filtering, sorting, navigation, cart and favorites do not yet perform actions. Pagination and newsletter sign-up are unavailable. Product images are loaded from Unsplash as in the reference.
+The page includes the header, filter panel, six reference products, pagination, newsletter section and footer. The controls and links are visual placeholders: searching, filtering, sorting, navigation, cart and favorites do not yet perform actions. Pagination and newsletter sign-up are unavailable. Product images are loaded from Unsplash as in the reference.
 
 ## Checks
 

@@ -1,5 +1,6 @@
 import { ChevronDown } from 'lucide-react'
 import FilterSidebar from './components/FilterSidebar'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import Newsletter from './components/Newsletter'
 import Pagination from './components/Pagination'
@@ -97,6 +98,7 @@ export default function App() {
         </div>
       </main>
       <Newsletter />
+      <Footer />
     </div>
   )
 }
