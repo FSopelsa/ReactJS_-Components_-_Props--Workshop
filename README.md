@@ -1,6 +1,6 @@
 # LITE.SHOP — React Workshop 1
 
-A work-in-progress React recreation of the storefront in the reference `index.html`, using Vite, TypeScript, Tailwind CSS and Lucide icons.
+A React recreation of the storefront in the reference `index.html`, using Vite, TypeScript, Tailwind CSS and Lucide icons.
 
 ## Getting started
 
@@ -28,7 +28,7 @@ Passing product data as props lets the same card display different products with
 
 ## Current scope
 
-The page includes the header, filter panel, six reference products, pagination, newsletter section and footer. The controls and links are visual placeholders: searching, filtering, sorting, navigation, cart and favorites do not yet perform actions. Pagination and newsletter sign-up are unavailable. Product images are loaded from Unsplash as in the reference.
+The page includes the header, filter panel, six reference products, pagination, newsletter section and footer. The controls and links are visual placeholders: searching, filtering, sorting, navigation, quick view, cart and favorites do not yet perform actions. Pagination and newsletter sign-up are unavailable. Product images are loaded from Unsplash as in the reference.
 
 ## Checks
 
