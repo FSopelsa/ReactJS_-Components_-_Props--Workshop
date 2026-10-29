@@ -7,7 +7,7 @@ export type Product = {
   rating: string
   price: string
   originalPrice?: string
-  badge: 'Discount' | 'Limited' | 'Sold Out'
+  badge: 'Discount' | 'Limited' | 'Sold Out' | 'Popular' | 'Hot Deal' | 'New Arrival'
   availability: string
   soldOut?: boolean
 }
@@ -16,6 +16,9 @@ const badgeStyles = {
   Discount: 'border-rose-100/50 bg-rose-500/10 text-rose-600',
   Limited: 'border-amber-100/50 bg-amber-500/10 text-amber-600',
   'Sold Out': 'border-slate-200/50 bg-slate-900/60 text-white',
+  Popular: 'border-blue-100/50 bg-blue-500/10 text-blue-600',
+  'Hot Deal': 'border-rose-100/50 bg-rose-500/10 text-rose-600',
+  'New Arrival': 'border-amber-100/50 bg-amber-500/10 text-amber-600',
 }
 
 export default function ProductCard({ product }: { product: Product }) {

@@ -1,6 +1,8 @@
 import { ChevronDown } from 'lucide-react'
 import FilterSidebar from './components/FilterSidebar'
 import Header from './components/Header'
+import Newsletter from './components/Newsletter'
+import Pagination from './components/Pagination'
 import ProductCard, { type Product } from './components/ProductCard'
 
 const products: Product[] = [
@@ -33,6 +35,34 @@ const products: Product[] = [
     availability: 'Back in stock next week',
     soldOut: true,
   },
+  {
+    name: 'Classic Canvas Sneakers',
+    category: 'Footwear',
+    image: 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&q=80&w=800',
+    rating: '4.5',
+    price: '550 kr',
+    badge: 'Popular',
+    availability: 'In Stock • ships in 1 day',
+  },
+  {
+    name: 'Premium Wireless Headphones',
+    category: 'Accessories',
+    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=800',
+    rating: '4.9',
+    price: '1,690 kr',
+    originalPrice: '2,200 kr',
+    badge: 'Hot Deal',
+    availability: 'In Stock • Ships in 2 days',
+  },
+  {
+    name: 'Tech Daypack',
+    category: 'Accessories',
+    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&q=80&w=800',
+    rating: '4.6',
+    price: '1,100 kr',
+    badge: 'New Arrival',
+    availability: 'In Stock • Ships in 1 day',
+  },
 ]
 
 export default function App() {
@@ -62,9 +92,11 @@ export default function App() {
             <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {products.map((product) => <ProductCard key={product.name} product={product} />)}
             </div>
+            <Pagination />
           </section>
         </div>
       </main>
+      <Newsletter />
     </div>
   )
 }
